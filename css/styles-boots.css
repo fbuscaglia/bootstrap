@@ -30,6 +30,10 @@ body {
     margin-top: 80px;
 }
 
+.sombra {
+    box-shadow: white;
+}
+
 .bouncy {
     font-size: 2.5rem;
     animation-duration: 1s;

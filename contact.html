@@ -40,7 +40,7 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
           <ul class="navbar-nav mr-auto mt-2 mt-lg-0 d-flex align-items-center">
-            <li class="nav-item active">
+            <li class="nav-item">
               <a class="nav-link" href="./index.html">Inicio</a>
             </li>
             <li class="nav-item">
@@ -52,7 +52,7 @@
             <li class="nav-item">
               <a class="nav-link" href="./tecnologias.html">Tecnologias</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item active">
               <a class="nav-link" href="./contact.html">Contacto</a>
             </li>
           </ul>
@@ -89,46 +89,49 @@
     </header>
     <div class="container">
       <div class="margen">
-        <h1 class="titulo">
-          Contactame y hagamos algo copado juntos
-        </h1>
-        <form class="form-inline">
-          <label class="sr-only" for="inlineFormInputName2">Name</label>
-          <input
-            type="text"
-            class="form-control mb-2 mr-sm-2"
-            id="inlineFormInputName2"
-            placeholder="Nombre"
-          />
+        <h1 class="titulo">Contactame y hagamos algo copado juntos</h1>
+        <div class="">
+          <div class="container">
+            <form class="card sombra p-3 bg-dark form-inline d-flex flex-column col-md-8 m-auto">
+              <input
+                type="text"
+                class="form-control mb-2 mr-sm-2"
+                id="inlineFormInputName2"
+                placeholder="Nombre"
+                required="true"
+              />
+              <div class="input-group shadow mb-2 mr-sm-2">
+                <input
+                  type=""
+                  class="form-control"
+                  id="inlineFormInputGroupUsername2"
+                  placeholder="Mail"
+                  required="true"
+                />
+              </div>
 
-          <label class="sr-only" for="inlineFormInputGroupUsername2"
-            >Username</label
-          >
-          <div class="input-group mb-2 mr-sm-2">
-            <div class="input-group-prepend">
-              <div class="input-group-text">@</div>
-            </div>
-            <input
-              type="text"
-              class="form-control"
-              id="inlineFormInputGroupUsername2"
-              placeholder="Username"
-            />
+              <input
+                class="form-control mb-2 mr-sm-2"
+                type="text"
+                name="inlineFormInputTema"
+                id="inlineFormInputTema"
+                placeholder="Tema"
+                required="true"
+              />
+              <textarea
+                class="form-control mb-2 mr-sm-2"
+                type="text"
+                name="inlineFormInputMensaje"
+                id="inlineFormInputMensaje"
+                placeholder="Mensaje"
+                rows="4"
+                required="true"
+              ></textarea>
+
+              <button type="submit" class="btn btn-warning mt-2">Enviar</button>
+            </form>
           </div>
-
-          <div class="form-check mb-2 mr-sm-2">
-            <input
-              class="form-check-input"
-              type="checkbox"
-              id="inlineFormCheck"
-            />
-            <label class="form-check-label" for="inlineFormCheck">
-              Remember me
-            </label>
-          </div>
-
-          <button type="submit" class="btn btn-primary mb-2">Enviar</button>
-        </form>
+        </div>
       </div>
     </div>
   </body>
