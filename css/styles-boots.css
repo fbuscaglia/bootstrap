@@ -34,6 +34,27 @@ body {
     box-shadow: white;
 }
 
+input[type=text]:focus{    
+    border: 1px solid #E4F277;
+    box-shadow: 0 0 0 0.2rem rgba(228, 242, 119, 0.5);
+}
+textarea[type=text]:focus{   
+    border: 1px solid #E4F277; 
+    box-shadow: 0 0 0 0.2rem rgba(228, 242, 119, 0.5);
+}
+
+.btn-warning {
+    background-color: rgb(228, 242, 119);
+    border-color: #E4F277;
+}
+
+.btn-warning:hover {
+    background-color: #919b4c;
+}
+.btn-warning:focus {
+    background-color: #aab851;
+}
+
 .bouncy {
     font-size: 2.5rem;
     animation-duration: 1s;
